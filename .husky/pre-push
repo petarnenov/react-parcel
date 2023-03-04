@@ -3,5 +3,3 @@
 
 # add script here
 npm version patch
-git push --follow-tags
-
