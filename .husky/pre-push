@@ -2,3 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # add script here
+npm version patch
+git push --follow-tags
+
