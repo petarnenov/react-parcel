@@ -1,0 +1,35 @@
+{
+  "name": "@petar.nenov/react-parcel",
+  "version": "0.0.6",
+  "description": "React library with Parcel bundler",
+  "source": "src/components/index.tsx",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "parcel src/index.html --open watch",
+    "build": "rm -rf dist && parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-typescript-types": "^2.8.3",
+    "@types/sass": "^1.45.0",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
+    "sass": "^1.58.3"
+  }
+}
