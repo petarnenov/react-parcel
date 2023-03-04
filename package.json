@@ -11,6 +11,8 @@
   ],
   "scripts": {
     "watch": "parcel src/index.html --open watch",
+    "bump": "npm version patch && npm run build",
+    "publish": "npm publish --access public",
     "build": "rm -rf dist && parcel build",
     "lint": "eslint --ext .ts,.tsx src",
     "lint:fix": "eslint --ext .ts,.tsx src --fix",
