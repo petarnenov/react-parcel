@@ -16,7 +16,6 @@
     "build": "rm -rf dist && parcel build",
     "lint": "eslint --ext .ts,.tsx src",
     "lint:fix": "eslint --ext .ts,.tsx src --fix",
-    "commitlint": "commitlint --from=HEAD~1",
     "prepare": "husky install"
   },
   "keywords": [],
