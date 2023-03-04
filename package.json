@@ -12,6 +12,7 @@
   "scripts": {
     "watch": "parcel src/index.html --open watch",
     "build": "rm -rf dist && parcel build",
+    "lint": "eslint --ext .ts,.tsx src",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -29,6 +30,10 @@
     "@parcel/transformer-sass": "^2.8.3",
     "@parcel/transformer-typescript-types": "^2.8.3",
     "@types/sass": "^1.45.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
     "parcel": "^2.8.3",
     "process": "^0.11.10",

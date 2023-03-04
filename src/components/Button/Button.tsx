@@ -13,9 +13,9 @@ type ButtonProps = {
 const Button = ({
   children,
   type = "button",
-  onClick = () => {},
-  onFocus = () => {},
   cssClass = "",
+  onClick,
+  onFocus,
 }: ButtonProps) => {
   return (
     <button
