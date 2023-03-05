@@ -16,17 +16,15 @@ const Button = ({
   cssClass = '',
   onClick,
   onFocus,
-}: ButtonProps) => {
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      onFocus={onFocus}
-      className={classes.button + ' ' + cssClass}
-    >
-      {children}
-    </button>
-  )
-}
+}: ButtonProps) => (
+  <button
+    type={type}
+    onClick={onClick}
+    onFocus={onFocus}
+    className={`${classes.button} ${cssClass}`}
+  >
+    {children}
+  </button>
+)
 
 export default Button

@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { Button } from '../Button'
+import Button from '../Button'
 
 import classes from './Form.module.scss'
 
@@ -12,14 +12,7 @@ type FormProps = {
   header?: React.ReactNode
 }
 
-const Form = ({
-  children,
-  onSubmit,
-  onReset,
-  onCancel,
-  footer,
-  header,
-}: FormProps) => {
+const Form = ({ children, onSubmit, footer, header }: FormProps) => {
   const submitHandler = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault()

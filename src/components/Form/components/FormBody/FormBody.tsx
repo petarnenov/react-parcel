@@ -1,35 +1,29 @@
 import React from 'react'
 
-export enum FieldType {
-  Text = 'text',
-  Email = 'email',
-  Number = 'number',
-}
+type FormFieldType = 'text' | 'number'
 
 type FormBodyProps = {
   children?: React.ReactNode
   fields: {
     [key: string]: {
       id: string
-      type: FieldType
+      type: FormFieldType
     }
   }
 }
 
-const FormBody = ({ fields, children }: FormBodyProps) => {
-  return (
-    <>
-      {Object.keys(fields).map((key) => {
-        const field = fields[key]
-        return (
-          <div key={field.id} className="formFields">
-            <label htmlFor={field.id}>{field.id}</label>
-            <input type={field.type} id={field.id} />
-          </div>
-        )
-      })}
-    </>
-  )
-}
+const FormBody = ({ fields }: FormBodyProps) => (
+  <>
+    {Object.keys(fields).map((key) => {
+      const field = fields[key]
+      return (
+        <div key={field.id} className="formFields">
+          <label htmlFor={field.id}>{field.id}</label>
+          <input type={field.type} id={field.id} />
+        </div>
+      )
+    })}
+  </>
+)
 
 export default FormBody

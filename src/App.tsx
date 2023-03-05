@@ -1,10 +1,10 @@
 import React from 'react'
 import { Button, Form, Label } from './components'
-import { FieldType, FormBody, FormFooter, FormHeader } from './components/Form'
+import { FormBody, FormFooter, FormHeader } from './components/Form'
 
 import classes from './App.module.scss'
 
-export function App() {
+function App() {
   return (
     <div className={classes.app}>
       <h1>Component playground</h1>
@@ -18,8 +18,8 @@ export function App() {
         <FormBody
           fields={{
             name: {
-              id: 'namwe',
-              type: FieldType.Text,
+              id: 'name',
+              type: 'text',
             },
           }}
         />
@@ -27,3 +27,5 @@ export function App() {
     </div>
   )
 }
+
+export default App
