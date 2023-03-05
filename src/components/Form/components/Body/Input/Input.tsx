@@ -12,13 +12,7 @@ type InputProps = {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input = ({
-  type,
-  id,
-  placeholder,
-  onChange,
-  cssClass,
-}: InputProps) => (
+const Input = ({ type, id, placeholder, onChange, cssClass }: InputProps) => (
   <input
     id={id}
     type={type}

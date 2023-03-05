@@ -6,7 +6,7 @@ type TextProps = {
   placeholder?: string
 }
 
-const Text = ({ id, placeholder }: TextProps)  => (
+const Text = ({ id, placeholder }: TextProps) => (
   <Input id={id} type="text" placeholder={placeholder} />
 )
 

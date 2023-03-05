@@ -32,7 +32,11 @@ const Body = ({ fields }: BodyProps) => (
           }`}
         >
           <Label htmlFor={field.id}>{field.id}</Label>
-          <Component id={field.id} placeholder={field.placeholder} options={field.options}/>
+          <Component
+            id={field.id}
+            placeholder={field.placeholder}
+            options={field.options}
+          />
         </div>
       )
     })}
