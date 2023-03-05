@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "engines" : { 
+    "npm" : ">=8.0.0",
+    "node" : ">=16.0.0"
+  },
   "scripts": {
     "watch": "parcel src/index.html --open watch",
     "bump": "npm version patch && npm run build",
