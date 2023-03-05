@@ -1,9 +1,5 @@
-import  { Button } from "./Button";
-import { Label } from "./Label";
-import { Form } from "./Form";
+import { Button } from './Button'
+import { Label } from './Label'
+import { Form } from './Form'
 
-export {
-    Button,
-    Label,
-    Form
-}
+export { Button, Label, Form }

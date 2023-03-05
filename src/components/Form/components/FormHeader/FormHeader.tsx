@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 type FormHeaderProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 const FormHeader = ({ children }: FormHeaderProps) => {
-  return <header>{children}</header>;
-};
+  return <header>{children}</header>
+}
 
-export default FormHeader;
+export default FormHeader

@@ -1,16 +1,16 @@
-import React, { useCallback } from "react";
-import { Button } from "../Button";
+import React, { useCallback } from 'react'
+import { Button } from '../Button'
 
-import classes from "./Form.module.scss";
+import classes from './Form.module.scss'
 
 type FormProps = {
-  onSubmit: () => void;
-  onReset?: () => void;
-  onCancel?: () => void;
-  children?: React.ReactNode;
-  footer?: React.ReactNode;
-  header?: React.ReactNode;
-};
+  onSubmit: () => void
+  onReset?: () => void
+  onCancel?: () => void
+  children?: React.ReactNode
+  footer?: React.ReactNode
+  header?: React.ReactNode
+}
 
 const Form = ({
   children,
@@ -22,11 +22,11 @@ const Form = ({
 }: FormProps) => {
   const submitHandler = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      onSubmit();
+      event.preventDefault()
+      onSubmit()
     },
     []
-  );
+  )
 
   return (
     <form className={classes.formBuilder} onSubmit={submitHandler}>
@@ -43,7 +43,7 @@ const Form = ({
         </div>
       </section>
     </form>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

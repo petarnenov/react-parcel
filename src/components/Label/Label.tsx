@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import classes from "./Label.module.scss";
+import classes from './Label.module.scss'
 
 type LabelProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 const Label = ({ children }: LabelProps) => {
-  return <label className={classes.label}>{children}</label>;
-};
+  return <label className={classes.label}>{children}</label>
+}
 
-export default Label;
+export default Label

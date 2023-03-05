@@ -1,75 +1,74 @@
 .formBuilder {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  background-color: bisque;
+  border-radius: 0.5rem;
+  border: 1px solid #512a2a;
+
+  & .formBody {
     display: flex;
-    margin: 1rem;
     flex-direction: column;
-    background-color: bisque;
-    border-radius: 0.5rem;
-    border: 1px solid #512a2a;
+    margin: 0.5rem;
 
-    & .formBody {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
+    & .formFields {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 0.5rem;
+    }
+  }
 
-        & .formFields {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            margin: 0.5rem;
-        }
+  & .formButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem;
+
+    & .formButtonsLeft {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
 
-    & .formButtons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0.5rem;
-       
-        & .formButtonsLeft {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-
-        & .formButtonsRight {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-
+    & .formButtonsRight {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
     }
+  }
 
-    & .formFooter {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+  & .formFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem;
+
+    & footer {
+      display: flex;
+      flex-direction: row;
+      color: #512a2a;
+
+      & * {
         margin: 0.5rem;
-
-        & footer {
-            display: flex;
-            flex-direction: row;
-            color: #512a2a;
-
-            & * {
-                margin: 0.5rem;
-            }
-        }
+      }
     }
+  }
 
-    & .formHeader {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+  & .formHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
+
+    & header {
+      display: flex;
+      flex-direction: row;
+      color: #512a2a;
+
+      & * {
         margin: 0.5rem;
-
-        & header {
-            display: flex;
-            flex-direction: row;
-            color: #512a2a;
-
-            & * {
-                margin: 0.5rem;
-            }
-        }
+      }
     }
+  }
 }

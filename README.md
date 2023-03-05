@@ -1,4 +1,4 @@
-# Want to create React library with Typescript, SASS and Parcel  
+# Want to create React library with Typescript, SASS and Parcel
 
 ## Add to .env
 
@@ -14,7 +14,7 @@ SASS_PATH="./src/assets/styles"
 npm run watch
 ```
 
-open Chrome on port 1234 or another browser  
+open Chrome on port 1234 or another browser
 
 ## Build and export 'componenrs' folder
 
@@ -42,4 +42,4 @@ import {Button} from "@petar.nenov/react-parcel"
 ...
 ```
 
-Happy coding ...  
+Happy coding ...
