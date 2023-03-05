@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react'
 import Button from '../Button'
 
-import classes from './Form.module.scss'
+import classes from './Builder.module.scss'
 
-type FormProps = {
+type BuilderProps = {
   onSubmit: () => void
   onReset?: () => void
   onCancel?: () => void
@@ -12,7 +12,7 @@ type FormProps = {
   header?: React.ReactNode
 }
 
-const Form = ({ children, onSubmit, footer, header }: FormProps) => {
+const Builder = ({ children, onSubmit, footer, header }: BuilderProps) => {
   const submitHandler = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault()
@@ -39,4 +39,4 @@ const Form = ({ children, onSubmit, footer, header }: FormProps) => {
   )
 }
 
-export default Form
+export default Builder

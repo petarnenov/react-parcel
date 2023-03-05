@@ -1,0 +1,6 @@
+.formField {
+    &.error * {
+        color: red;
+        border-color: red;
+   }
+}
