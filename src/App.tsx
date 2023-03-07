@@ -2,10 +2,14 @@ import React from 'react'
 import { Button, Form, Label } from './components'
 
 import classes from './App.module.scss'
+import Navbar from './components/templates/Navbar/Navbar'
 
 function App() {
   return (
     <div className={classes.app}>
+      <Navbar
+        tabs={{ home: '/home', about: '/about', dashboard: '/dashboard' }}
+      />
       <h1>Component playground</h1>
       <Label>Button Label</Label>
       <Button cssClass={classes.button}>Hi</Button>
