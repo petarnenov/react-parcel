@@ -1,6 +1,6 @@
 {
   "name": "@petar.nenov/react-parcel",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "React library with Parcel bundler",
   "source": "src/components/index.tsx",
   "main": "dist/main.js",
